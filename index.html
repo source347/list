@@ -1,257 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Curated Crypto Earning Links 💎</title>
-    <style>
-        /* General Styling and Background */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            background-color: #f0f4f8; /* Light blue-gray background */
-            color: #1e293b; /* Dark text */
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            line-height: 1.6;
-        }
-
-        /* Header and Title */
-        .container {
-            width: 100%;
-            max-width: 800px;
-            margin: auto;
-            background: #ffffff;
-            padding: 40px 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        }
-
-        h1 {
-            color: #4f46e5; /* Vibrant indigo */
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            font-weight: 800;
-        }
-
-        .subtitle {
-            text-align: center;
-            color: #64748b; /* Slate gray */
-            font-size: 1.1rem;
-            margin-bottom: 40px;
-            font-style: italic;
-        }
-
-        /* Section Header Styles */
-        h2 {
-            color: #0d9488; /* Teal color for section headers */
-            font-size: 1.75rem;
-            border-bottom: 3px solid #6ee7b7; /* Light teal underline */
-            padding-bottom: 10px;
-            margin-top: 40px;
-            margin-bottom: 25px;
-            font-weight: 700;
-        }
-
-        /* Link Item Styling */
-        .link-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-decoration: none;
-            background-color: #ffffff;
-            padding: 18px 25px;
-            margin-bottom: 15px;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        .link-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-            border-color: #4f46e5; /* Highlight border on hover */
-            background-color: #eff6ff; /* Very light blue background on hover */
-        }
-
-        /* Link Text and Badge Styles */
-        .link-text {
-            font-weight: <b>700</b>;
-            font-size: 1.1rem;
-            color: #1e293b;
-        }
-
-        .link-details {
-            font-size: 0.9rem;
-            color: #64748b;
-            margin-left: 15px;
-        }
-
-        .tag-badge {
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            font-weight: <b>600</b>;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: #ffffff;
-            white-space: nowrap;
-        }
-
-        /* Specific Tag Colors */
-        .tag-top { background-color: #ef4444; } /* Red */
-        .tag-high-ref { background-color: #f97316; } /* Orange */
-        .tag-legacy { background-color: #6366f1; } /* Indigo */
-        .tag-depin { background-color: #059669; } /* Emerald */
-        .tag-faucet { background-color: #3b82f6; } /* Blue */
-        .tag-content { background-color: #a855f7; } /* Violet */
-        .tag-bdw { background-color: #22c55e; } /* Green */
-        .tag-new { background-color: #ec4899; } /* Pink */
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="A categorized directory of crypto faucets, paid-to-click sites, online tasks, content platforms, and bandwidth-sharing services.">
+  <title>Curated Earning Hub — Crypto & Online Rewards Directory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#0b1020;--panel:#111a2d;--panel2:#17233a;--line:#263650;--text:#edf3fc;--muted:#9aabc2;--accent:#75e6c4;--accent2:#a7f3d0}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% -20%,#1a3850 0,transparent 48%),var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.55}
+    .shell{width:min(1080px,calc(100% - 32px));margin:0 auto;padding:42px 0 28px}
+    .eyebrow{display:flex;align-items:center;gap:9px;color:var(--accent);font-size:.72rem;font-weight:700;letter-spacing:.19em;text-transform:uppercase}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px var(--accent)}
+    h1{margin:14px 0 10px;font-size:clamp(2rem,5vw,3.45rem);line-height:1.08;letter-spacing:-.055em}
+    h1 span{color:var(--accent)}
+    .intro{max-width:700px;color:var(--muted);font-size:1rem}
+    .notice{display:flex;gap:12px;align-items:flex-start;margin:24px 0 28px;padding:14px 16px;border:1px solid #5b4b2d;border-radius:13px;background:rgba(100,75,31,.18);color:#e9d9b5;font-size:.84rem}
+    .notice strong{color:#fff0c8}
+    .toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;margin:24px 0 14px}
+    .search-wrap{position:relative}
+    .search-wrap svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted)}
+    #search{width:100%;height:48px;padding:0 14px 0 43px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);font:inherit}
+    #search:focus,.filter:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+    .count{display:flex;align-items:center;padding:0 14px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--muted);font-size:.82rem;white-space:nowrap}
+    .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+    .filter{border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--muted);padding:8px 13px;font:600 .78rem Inter,sans-serif;cursor:pointer;transition:.15s}
+    .filter:hover{border-color:#638078;color:var(--text)}
+    .filter[aria-pressed=true]{border-color:var(--accent);background:rgba(117,230,196,.12);color:var(--accent)}
+    .section{margin-top:30px}
+    .section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:13px}
+    h2{margin:0;font-size:1.2rem;letter-spacing:-.02em}
+    .section-meta{color:var(--muted);font: .72rem 'DM Mono',monospace}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+    .site-card{display:flex;min-width:0;align-items:center;justify-content:space-between;gap:14px;padding:16px 17px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,rgba(23,35,58,.95),rgba(17,26,45,.95));text-decoration:none;color:inherit;transition:transform .16s,border-color .16s,background .16s}
+    .site-card:hover{transform:translateY(-2px);border-color:#5b9c8d;background:#192b40}
+    .site-info{min-width:0}
+    .site-name{display:block;font-size:.96rem;font-weight:700;overflow-wrap:anywhere}
+    .site-type{display:block;margin-top:3px;color:var(--muted);font-size:.79rem}
+    .tag{flex:none;border:1px solid #385b57;border-radius:7px;background:rgba(117,230,196,.09);padding:5px 8px;color:var(--accent2);font:500 .64rem 'DM Mono',monospace;letter-spacing:.035em;text-align:center}
+    .tag.orange{border-color:#765332;background:rgba(245,158,11,.1);color:#f6c77d}
+    .tag.blue{border-color:#365779;background:rgba(96,165,250,.1);color:#9ac8ff}
+    .tag.purple{border-color:#59447a;background:rgba(167,139,250,.1);color:#c9b5ff}
+    .tag.pink{border-color:#74465d;background:rgba(244,114,182,.1);color:#f9acd1}
+    .tag.red{border-color:#75434a;background:rgba(248,113,113,.1);color:#ffaaaa}
+    .empty{display:none;padding:28px;border:1px dashed var(--line);border-radius:14px;color:var(--muted);text-align:center}
+    footer{margin-top:38px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.76rem}
+    footer p{margin:5px 0}
+    a,button,input{font-family:inherit}
+    @media(max-width:680px){.shell{padding-top:30px}.toolbar{grid-template-columns:1fr}.count{min-height:38px}.cards{grid-template-columns:1fr}.site-card{padding:15px}.section-head{align-items:flex-end}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
 </head>
 <body>
+  <main class="shell">
+    <header>
+      <div class="eyebrow"><span class="dot"></span> Curated directory</div>
+      <h1>My Earning <span>Hub</span></h1>
+      <p class="intro">A categorized collection of paid-to-click platforms, faucets, online task sites, content platforms, and bandwidth-sharing services. Search the directory or filter by activity type.</p>
+    </header>
 
-<div class="container">
-    <h1><b>&#128142; My Curated Earning Hub &#128640;</b></h1>
-    <p class="subtitle">A hand-picked list of the best PTC, Faucet, and Passive Income opportunities.</p>
+    <aside class="notice" aria-label="Important information">
+      <span aria-hidden="true">ⓘ</span>
+      <div><strong>Do your own due diligence.</strong> These are third-party services, not guaranteed income opportunities. Availability, eligibility, rewards, withdrawal thresholds, and terms can change. Some links may be referral links that can benefit the site owner.</div>
+    </aside>
 
-    <h2><b>&#128176; Active Earning Sites (PTC, Faucets, Tasks)</b></h2>
+    <div class="toolbar">
+      <label class="search-wrap">
+        <span class="sr-only" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Search earning sites</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+        <input id="search" type="search" placeholder="Search sites or earning methods…" autocomplete="off">
+      </label>
+      <div id="result-count" class="count" aria-live="polite">15 platforms</div>
+    </div>
 
-    <a href="https://r.adbtc.top/1169353" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">AdBTC</span>
-            <span class="link-details">(PTC - Paid-to-Click)</span>
-        </div>
-        <span class="tag-badge tag-legacy">SINCE '16</span>
-    </a>
-    
-    <a href="https://adbch.top/r/312844" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">AdBCH</span>
-            <span class="link-details">(PTC for Bitcoin Cash)</span>
-        </div>
-        <span class="tag-badge tag-faucet">PTC</span>
-    </a>
+    <div class="filters" role="group" aria-label="Filter platforms">
+      <button class="filter" type="button" data-filter="all" aria-pressed="true">All platforms</button>
+      <button class="filter" type="button" data-filter="ptc" aria-pressed="false">PTC & tasks</button>
+      <button class="filter" type="button" data-filter="faucet" aria-pressed="false">Faucets</button>
+      <button class="filter" type="button" data-filter="content" aria-pressed="false">Content</button>
+      <button class="filter" type="button" data-filter="passive" aria-pressed="false">Bandwidth / passive</button>
+    </div>
 
-    <a href="https://coinpayu.com/lp2/dashboard" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">CoinPayU</span>
-            <span class="link-details">(PTC / Faucet)</span>
-        </div>
-        <span class="tag-badge tag-top">TOP PICK</span>
-    </a>
+    <section class="section" data-section="active">
+      <div class="section-head"><h2>💸 Active earning sites</h2><span class="section-meta">PTC · FAUCETS · TASKS</span></div>
+      <div class="cards">
+        <a class="site-card" data-category="ptc faucet" data-search="adbtc ptc paid to click bitcoin legacy" href="https://r.adbtc.top/1169353" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">AdBTC</span><span class="site-type">Paid-to-click</span></span><span class="tag purple">SINCE ’16</span></a>
+        <a class="site-card" data-category="ptc faucet" data-search="adbch ptc bitcoin cash" href="https://adbch.top/r/312844" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">AdBCH</span><span class="site-type">Paid-to-click · Bitcoin Cash</span></span><span class="tag blue">PTC</span></a>
+        <a class="site-card" data-category="ptc faucet" data-search="coinpayu ptc faucet" href="https://coinpayu.com/lp2/dashboard" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">CoinPayU</span><span class="site-type">Paid-to-click · Faucet</span></span><span class="tag red">TOP PICK*</span></a>
+        <a class="site-card" data-category="ptc faucet" data-search="cointiply offerwalls faucet referral" href="https://cointiply.com/r/mOnqp" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">Cointiply</span><span class="site-type">Offerwalls · Faucet</span></span><span class="tag orange">20% REF*</span></a>
+        <a class="site-card" data-category="faucet" data-search="firefaucet auto faucet referral" href="https://firefaucet.win/ref/126786" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">FireFaucet</span><span class="site-type">Automated faucet</span></span><span class="tag orange">20% REF*</span></a>
+        <a class="site-card" data-category="faucet" data-search="dutchycorp autofaucet automated faucet" href="https://autofaucet.dutchycorp.space/?r=Autofaucets" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">DutchyCorp AutoFaucet</span><span class="site-type">Automated faucet</span></span><span class="tag blue">FAUCET</span></a>
+        <a class="site-card" data-category="faucet" data-search="simplebits mining simulator" href="https://simplebits.io/ref/0rd4li1cSLTL" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">SimpleBits</span><span class="site-type">Mining simulator</span></span><span class="tag pink">NEW*</span></a>
+        <a class="site-card" data-category="faucet" data-search="viefaucet multi coin faucet referral" href="https://viefaucet.com/?r=6380ee9189dc9d60cddeaf22" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">VieFaucet</span><span class="site-type">Multi-coin faucet</span></span><span class="tag orange">20% REF*</span></a>
+        <a class="site-card" data-category="faucet" data-search="freebitcoin hourly faucet referral" href="https://freebitco.in/?r=17006348" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">FreeBitco.in</span><span class="site-type">Hourly faucet</span></span><span class="tag orange">50% REF*</span></a>
+        <a class="site-card" data-category="faucet" data-search="earnbitmoon faucet" href="https://earnbitmoon.club/?ref=265500" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">Earnbitmoon</span><span class="site-type">Faucet</span></span><span class="tag blue">FAUCET</span></a>
+        <a class="site-card" data-category="ptc" data-search="everve social media tasks referral" href="https://everve.net/ref/678797/" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">Everve</span><span class="site-type">Social media tasks</span></span><span class="tag orange">25% REF*</span></a>
+        <a class="site-card" data-category="content" data-search="publish0x crypto blogging content writing" href="https://www.publish0x.com/?a=OpnelZ1bKB" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">Publish0x</span><span class="site-type">Crypto content platform</span></span><span class="tag purple">CONTENT</span></a>
+      </div>
+    </section>
 
-    <a href="https://cointiply.com/r/mOnqp" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">CointiPly</span>
-            <span class="link-details">(Offerwalls / Faucet)</span>
-        </div>
-        <span class="tag-badge tag-high-ref">20% REF</span>
-    </a>
+    <section class="section" data-section="passive">
+      <div class="section-head"><h2>📡 Passive / bandwidth sharing</h2><span class="section-meta">BANDWIDTH · DEPIN</span></div>
+      <div class="cards">
+        <a class="site-card" data-category="passive" data-search="pawns app share bandwidth passive income" href="https://pawns.app?r=1112465" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">Pawns.app</span><span class="site-type">Bandwidth sharing</span></span><span class="tag">BANDWIDTH</span></a>
+        <a class="site-card" data-category="passive" data-search="honeygain share bandwidth" href="https://r.honeygain.me/PYMNF83E8F" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">Honeygain</span><span class="site-type">Bandwidth sharing</span></span><span class="tag purple">BANDWIDTH</span></a>
+        <a class="site-card" data-category="passive" data-search="grass io depin bandwidth airdrop" href="https://app.getgrass.io/register?referralCode=XBPRl6U7sAvvzRX" target="_blank" rel="noopener noreferrer"><span class="site-info"><span class="site-name">Grass.io</span><span class="site-type">DePIN · Bandwidth sharing</span></span><span class="tag">DEPIN*</span></a>
+      </div>
+    </section>
 
-    <a href="https://firefaucet.win/ref/126786" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">FireFaucet</span>
-            <span class="link-details">(Auto Faucet)</span>
-        </div>
-        <span class="tag-badge tag-high-ref">20% REF</span>
-    </a>
+    <div id="empty-state" class="empty">No platforms match your search. Try another keyword or filter.</div>
 
-    <a href="https://autofaucet.dutchycorp.space/?r=Autofaucets" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">DutchyCorp AutoFaucet</span>
-            <span class="link-details">(Automated)</span>
-        </div>
-        <span class="tag-badge tag-faucet">FAUCET</span>
-    </a>
+    <footer>
+      <p>* Labels and referral percentages reflect the original directory information and have not been independently verified. They may be outdated.</p>
+      <p>Use caution with third-party earning platforms. Review privacy policies, device/network requirements, withdrawal conditions, local rules, and current terms before signing up. Never pay a fee or share sensitive credentials solely to access a promised reward.</p>
+      <p>External links open in a new tab. This directory does not guarantee availability, earnings, or service legitimacy.</p>
+    </footer>
+  </main>
 
-    <a href="https://simplebits.io/ref/0rd4li1cSLTL" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">SimpleBits</span>
-            <span class="link-details">(Mining Simulator)</span>
-        </div>
-        <span class="tag-badge tag-new">NEW</span>
-    </a>
+  <script>
+    const search = document.getElementById('search');
+    const cards = [...document.querySelectorAll('.site-card')];
+    const filters = [...document.querySelectorAll('.filter')];
+    const empty = document.getElementById('empty-state');
+    const count = document.getElementById('result-count');
+    let activeFilter = 'all';
 
-    <a href="https://viefaucet.com/?r=6380ee9189dc9d60cddeaf22" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">VieFaucet</span>
-            <span class="link-details">(Multi-Coin)</span>
-        </div>
-        <span class="tag-badge tag-high-ref">20% REF</span>
-    </a>
+    function applyFilters() {
+      const query = search.value.trim().toLocaleLowerCase();
+      let visible = 0;
+      cards.forEach((card) => {
+        const matchesQuery = !query || (card.dataset.search + ' ' + card.textContent).toLocaleLowerCase().includes(query);
+        const categories = card.dataset.category.split(' ');
+        const matchesFilter = activeFilter === 'all' || categories.includes(activeFilter);
+        const show = matchesQuery && matchesFilter;
+        card.hidden = !show;
+        if (show) visible++;
+      });
+      document.querySelectorAll('[data-section]').forEach((section) => {
+        const sectionCards = [...section.querySelectorAll('.site-card')];
+        section.hidden = !sectionCards.some((card) => !card.hidden);
+      });
+      count.textContent = visible + (visible === 1 ? ' platform' : ' platforms');
+      empty.style.display = visible ? 'none' : 'block';
+    }
+    search.addEventListener('input', applyFilters);
+    filters.forEach((button) => button.addEventListener('click', () => {
+      activeFilter = button.dataset.filter;
+      filters.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+      applyFilters();
+    }));
+    applyFilters();
+  </script>
 
-    <a href="https://freebitco.in/?r=17006348" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">FreeBitco.in</span>
-            <span class="link-details">(Hourly Faucet)</span>
-        </div>
-        <span class="tag-badge tag-high-ref">50% REF</span>
-    </a>
-
-    <a href="https://earnbitmoon.club/?ref=265500" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">Earnbitmoon</span>
-            <span class="link-details">(Faucet)</span>
-        </div>
-        <span class="tag-badge tag-faucet">FAUCET</span>
-    </a>
-
-    <a href="https://everve.net/ref/678797/" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">Everve</span>
-            <span class="link-details">(Social Media Tasks)</span>
-        </div>
-        <span class="tag-badge tag-high-ref">25% REF</span>
-    </a>
-
-    <a href="https://www.publish0x.com/?a=OpnelZ1bKB" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">Publish0x</span>
-            <span class="link-details">(Crypto Blogging)</span>
-        </div>
-        <span class="tag-badge tag-content">CONTENT</span>
-    </a>
-
-    <h2><b>&#128246; Passive Income (Bandwidth & CPU Sharing)</b></h2>
-
-    <a href="https://pawns.app?r=1112465" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">Pawns.app</span>
-            <span class="link-details">(Share Bandwidth)</span>
-        </div>
-        <span class="tag-badge tag-bdw">TOP BDW</span>
-    </a>
-
-    <a href="https://r.honeygain.me/PYMNF83E8F" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">Honeygain</span>
-            <span class="link-details">(Share Bandwidth)</span>
-        </div>
-        <span class="tag-badge tag-legacy">BDW SHARE</span>
-    </a>
-
-    <a href="https://app.getgrass.io/register?referralCode=XBPRl6U7sAvvzRX" target="_blank" class="link-item">
-        <div>
-            <span class="link-text">Grass.io</span>
-            <span class="link-details">(DEPIN, Bandwidth)</span>
-        </div>
-        <span class="tag-badge tag-depin">AIRDROP</span>
-    </a>
-
-</div>
-
-
-
-<script type="module">
-  import { initDonationWidget }
-    from 'https://source347.github.io/donation-widget/donation-widget.js';
-
-  initDonationWidget();
-</script>
+  <script type="module">
+    import { initDonationWidget } from 'https://source347.github.io/donation-widget/donation-widget.js';
+    initDonationWidget();
+  </script>
 </body>
 </html>
