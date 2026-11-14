@@ -74,6 +74,49 @@
     footer p{margin:5px 0}
     a,button,input{font-family:inherit}
     @media(max-width:700px){.shell{width:min(100% - 30px,560px);padding-top:15px}header{padding-bottom:25px}h1{margin-top:29px;font-size:clamp(3.25rem,15vw,5.3rem)}.toolbar{grid-template-columns:1fr;gap:3px}.count{min-height:27px}.filters{margin-bottom:34px}.cards,.faq-list{grid-template-columns:1fr}.site-card{min-height:78px}.section-head{align-items:flex-end}.section-meta{font-size:.56rem}}
+    /* Compact first-screen directory: show every destination immediately. */
+    .shell{width:min(1180px,calc(100% - 32px));padding:12px 0 28px}
+    header{padding:8px 0 13px;border-top-width:3px}
+    .eyebrow{font-size:.59rem;letter-spacing:.09em}
+    h1{max-width:none;margin:10px 0 5px;font-size:clamp(2rem,4.8vw,3.8rem);line-height:.98}
+    .intro{max-width:none;margin:5px 0 0;font-size:.82rem;line-height:1.35}
+    header:after{display:none}
+    .toolbar{margin:8px 0 3px;gap:10px}
+    #search{height:35px;font-size:.82rem}
+    .count{font-size:.65rem}
+    .filters{gap:5px;margin:2px 0 12px}
+    .filter{padding:4px 8px;font-size:.61rem}
+    .section{margin-top:13px}
+    .section-head{margin-bottom:2px;padding-bottom:4px;border-bottom-width:1px}
+    h2{font-size:1.12rem}
+    .section-meta{font-size:.53rem}
+    .cards{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:18px}
+    .site-card{min-height:55px;padding:7px 1px 7px 27px;gap:6px}
+    .site-card:before{top:12px;font-size:.57rem}
+    .site-card:hover{padding-left:31px}
+    .site-name{font-size:.91rem;line-height:1.12}
+    .site-type{margin-top:2px;font-size:.65rem;line-height:1.2}
+    .tag{font-size:.49rem;padding-left:5px}
+    .notice{margin:14px 0 20px;padding:8px 0;font-size:.69rem;line-height:1.35}
+    @media(max-width:700px){
+      .shell{width:calc(100% - 24px);padding-top:8px}
+      h1{font-size:clamp(2.05rem,8.4vw,3.1rem)}
+      .intro{font-size:.76rem}
+      .cards{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:13px}
+      .site-card{min-height:53px;padding-left:25px}
+      .site-card:before{top:11px}
+      .site-name{font-size:.85rem}
+      .site-type{font-size:.61rem}
+      .tag{font-size:.45rem}
+      .filters{margin-bottom:8px}
+      .section{margin-top:10px}
+    }
+    @media(max-width:370px){
+      .site-card{gap:3px;padding-right:0}
+      .site-name{font-size:.78rem}
+      .site-type{font-size:.57rem}
+      .tag{font-size:.4rem}
+    }
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
   </style>
 </head>
@@ -81,14 +124,9 @@
   <main class="shell">
     <header>
       <div class="eyebrow"><span class="dot"></span> SOURCE347 / FIELD DIRECTORY · VOL. 01</div>
-      <h1>Online earning,<br><span>without the noise.</span></h1>
-      <p class="intro">Discover and organize online earning platforms in one searchable directory. Browse paid-to-click (PTC) websites, GPT and offerwall services, cryptocurrency faucets, survey and content-reward platforms, and passive bandwidth-sharing apps. Compare earning methods, review each service's current terms, and use the category filters to find platforms that match your interests.</p>
+      <h1>Online earning, <span>without the noise.</span></h1>
+      <p class="intro">A straight-to-the-point index of PTC, reward, faucet and bandwidth platforms.</p>
     </header>
-
-    <aside class="notice" aria-label="Important information">
-      <span aria-hidden="true">ⓘ</span>
-      <div><strong>Do your own due diligence.</strong> These are third-party services, not guaranteed income opportunities. Availability, eligibility, rewards, withdrawal thresholds, and terms can change. Some links may be referral links that can benefit the site owner.</div>
-    </aside>
 
     <div class="toolbar">
       <label class="search-wrap">
@@ -131,6 +169,11 @@
     </section>
 
     <div id="empty-state" class="empty">No platforms match your search. Try another keyword or filter.</div>
+
+    <aside class="notice" aria-label="Important information">
+      <span aria-hidden="true">ⓘ</span>
+      <div><strong>Do your own due diligence.</strong> These are third-party services, not guaranteed income opportunities. Availability, eligibility, rewards, withdrawal thresholds, and terms can change. Some links may be referral links that can benefit the site owner.</div>
+    </aside>
 
     <section class="section seo-content" aria-labelledby="about-directory">
       <div class="section-head"><h2 id="about-directory">How to use this online earning directory</h2><span class="section-meta">GUIDE</span></div>
